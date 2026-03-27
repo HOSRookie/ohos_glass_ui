@@ -1,0 +1,68 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\liuxy1933\\.ohos\\config\\default_ohos_glass_ui_61G8_yw7wvN5CfpHyfk0NC9WE6Z1V71TmDOcXf9rOsU=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B278399C6DCE8562CDEDD61F090C43D5EE5EFFC69DB92B2AFA2B087A098CDB6EFB9B9026B5547AC",
+          "profile": "C:\\Users\\liuxy1933\\.ohos\\config\\default_ohos_glass_ui_61G8_yw7wvN5CfpHyfk0NC9WE6Z1V71TmDOcXf9rOsU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\liuxy1933\\.ohos\\config\\default_ohos_glass_ui_61G8_yw7wvN5CfpHyfk0NC9WE6Z1V71TmDOcXf9rOsU=.p12",
+          "storePassword": "0000001B0D544F81CFB38BDCD5326786F50B7D0BBAC138FCA1956CAA43C15A4A8FF58AB82F307F3F4C2F99"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.2(22)",
+        "compatibleSdkVersion": "6.0.2(22)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "library",
+      "srcPath": "./library",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
